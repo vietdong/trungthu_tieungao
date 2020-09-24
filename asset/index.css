@@ -62,12 +62,12 @@ body{
     width: 100%;
     margin-top: 80px;
     position: absolute;
-    bottom: -135px;
+    bottom: -85px;
     left: 20px;
 }
 .box_img{
     position: relative;
-    height: 600px;
+    height: 650px;
 }
 .logo{
     margin-top: -70px;
