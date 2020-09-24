@@ -1,0 +1,142 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+  }
+.main{
+    background-image: url('./img/bg_main.png');
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.menu{
+    position: absolute;
+    top:-20px;
+}
+
+.menu ul li{
+    display: inline-block;
+}
+
+.rotate{
+    position: relative;
+}
+.rotate::after{
+    content: "";
+    width: 134px;
+    height: 87px;
+    background-image: url('./img/btn-zhiye-detail.png');
+    position: absolute;
+    top: -75px;
+    left: 40%;
+}
+.btn{
+    text-align: center;
+    width: 100%;
+}
+.rotate .bg{
+    width: 100%;
+}
+.rotate_center{
+    position: absolute;
+    top: 30%;
+    left: 36%;
+}
+.left{
+    width: 30%;
+    position: absolute;
+    top: 20%;
+    left: 50px;
+
+}
+
+.right{
+    width: 35%;
+    position: absolute;
+    top: 100px;
+    right: 20%;
+}
+.text{
+    width: 100%;
+    margin-top: 80px;
+    position: absolute;
+    bottom: -135px;
+    left: 20px;
+}
+.box_img{
+    position: relative;
+    height: 600px;
+}
+.logo{
+    margin-top: -70px;
+}
+@media only screen and (max-width: 1600px) {
+    
+    .left{
+        width: 40%;
+        left: 0;
+    }
+    .right{
+        width: 45%;
+        right: 70px;
+        top: 141px;
+    }
+    
+}
+@media only screen and (max-width: 600px) {
+    .left{
+        width: 50%;
+        left: 0;
+        position: unset;
+        margin: auto;
+    }
+    .right{
+        width: 80%;
+        right: 70px;
+        top: 141px;
+        position: unset;
+        margin: auto;
+    }
+    .main{
+        background-size:cover;
+        height: 900px;
+    }
+    .menu{
+        width: 100%;
+    }
+    .menu ul{
+        margin-left: -40px;
+    }
+    .menu ul li{
+        width: 24%;
+
+    }
+    .menu ul li img{
+        width: 100%;
+    }
+    .btn img{
+        width: 150px;
+    }
+    .container-full{
+        position: absolute;
+        top:100px
+    }
+    .rotate::after{
+        display: none;
+    }
+    .rotate_center{
+        width: 70px;
+        height: 80px;
+        top: 35%;
+        left: 40%;
+    }
+    .logo{
+        padding: 50px 0 20px 0;
+    }
+.box_img,.text{
+    position: unset;
+    height: auto;
+}
+}
