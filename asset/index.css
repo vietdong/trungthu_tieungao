@@ -2,6 +2,10 @@ body{
     padding: 0;
     margin: 0;
 }
+@font-face {
+    font-family: Davida;
+    src: url('./UTM\ Davida.ttf');
+  }
 * {
     box-sizing: border-box;
   }
@@ -155,6 +159,27 @@ input:focus, button:focus {
     color: #db2200;
     line-height: 30px;
 }
+.luotquay{
+    display: inline-block;
+    width: 241px;
+    height: 75px;
+    background-image: url('./img/btn_quay.png');
+    background-size: 100% 100%;
+}
+.luotquay div{
+    font-family: Davida;
+    color: #c13818;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 120%;
+    line-height: 40px;
+    margin: 15px 0 0 30px;
+}
+.btn img{
+    float: left;
+}
 @media only screen and (max-width: 1600px) {
     .left{
         width: 40%;
@@ -168,11 +193,22 @@ input:focus, button:focus {
     
 }
 @media only screen and (max-width: 600px) {
+    .luotquay div{
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        margin-left: 20px;
+        font-size: 80%;
+    }
     .left{
         width: 50%;
         left: 0;
         position: unset;
         margin: auto;
+    }
+    .luotquay{
+        width: 150px;
+        height: 46px;
     }
     .right{
         width: 80%;
